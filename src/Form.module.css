@@ -66,6 +66,19 @@ button svg {
     margin-left: 0.5rem;
 }
 
+@media all and (max-width: 790px) {
+
+  .form {
+    grid-template-columns: 1fr;
+    width:100%;
+  }
+
+  button, select, input {
+    width: initial;
+    width: 100%
+  }
+}
+
 @media all and (min-width: 1700px) {
   label, select, input {
       font-size: 1.4rem;

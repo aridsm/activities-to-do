@@ -25,11 +25,11 @@ function App() {
         }
         <Form setActivityVisible={setActivityVisible} fetchData={fetchData}/>
         </section>
-        <div>
+        <div className='img'>
           <Img />
         </div>
       </div>
-      <footer>Project by <a href='/'>Ariane Morelato</a></footer>
+      <footer>Project by <a href='https://github.com/aridsm'>Ariane Morelato</a></footer>
       </div>
   )
 }
