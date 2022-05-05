@@ -1,0 +1,62 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select, input {
+    display: block;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: 2px solid rgb(201, 201, 201);
+    background: transparent;
+    font-family: inherit;
+    transition: 0.1s;
+    font-size: inherit;
+    outline: none;
+}
+
+select {
+    text-transform: capitalize;
+}
+
+select:hover, input:hover, input:focus {
+    border: 2px solid #5AB7CC;
+}
+
+option {
+    font-family: inherit;
+}
+
+button {
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: 2px solid #5AB7CC;
+    background: #5AB7CC;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+}
+
+button:hover {
+    transform:translateY(-0.2rem);
+}
+
+button svg {
+    fill: white;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}

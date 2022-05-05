@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './Form'
+import SecaoPrincipal from './SecaoPrincipal'
+import {ReactComponent as Img} from './assets/img.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className='App'>
+      <h1>Activities to do</h1>
+      <div className='principal'>
+        <section>
+        <SecaoPrincipal />
+        <Form />
+        </section>
+        <div>
+          <Img />
+        </div>
+      </div>
+      <footer>Project by <a href='/'>Ariane Morelato</a></footer>
+      </div>
+  )
 }
 
 export default App;
