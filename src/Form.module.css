@@ -9,6 +9,7 @@
 label {
     display: block;
     margin-bottom: 0.5rem;
+    font-size: inherit
 }
 
 select, input {
@@ -63,4 +64,26 @@ button svg {
     fill: white;
     width: 1.5rem;
     margin-left: 0.5rem;
+}
+
+@media all and (min-width: 1700px) {
+  label, select, input {
+      font-size: 1.4rem;
+  }
+
+  select, input {
+    width: 12rem;
+    height: 3.5rem
+  }
+
+  button {
+    width: 12rem;
+    height: 3.5rem;
+    font-size: 1.4rem
+  }
+
+  button svg {
+    width: 1.8rem
+  }
+
 }

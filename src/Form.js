@@ -22,7 +22,6 @@ const handlesubmit = React.useCallback((e) => {
     e.preventDefault();
     fetchData(participants, activity)
     setActivityVisible(true)
-    console.log(activity)
 }, [fetchData, activity, participants])
 
   return (

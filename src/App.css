@@ -10,6 +10,9 @@ body {
     background: #FAF9F8;
     color: #2B2F2C;
     font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -31,7 +34,13 @@ p {
 }
 
 .App {
-    padding: 2rem 1rem
+    padding: 2rem 1rem;
+    width:100vw;
+    height: 100vh;
+    max-height: 100rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .principal {
@@ -56,4 +65,18 @@ footer a {
 
 footer a:hover {
     color: #5AB7CC
+}
+
+@media all and (min-width: 1700px) {
+  h1 {
+      font-size: 4rem;
+  }
+
+  h2 {
+      font-size: 3rem;
+  }
+
+  p {
+      font-size: 1.4rem;
+  }
 }
