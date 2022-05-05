@@ -22,7 +22,7 @@ const handlesubmit = React.useCallback((e) => {
     e.preventDefault();
     fetchData(participants, activity)
     setActivityVisible(true)
-}, [fetchData, activity, participants])
+}, [fetchData, activity, participants, setActivityVisible])
 
   return (
     <form className={styles.form} onSubmit={handlesubmit}>
