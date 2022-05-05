@@ -1,7 +1,9 @@
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem
+    grid-gap: 1rem;
+    margin-top: 3rem;
+    width: min-content
 }
 
 label {
@@ -12,6 +14,7 @@ label {
 select, input {
     display: block;
     width: 10rem;
+    height: 3rem;
     padding: 0.5rem;
     border-radius: 0.2rem;
     border: 2px solid rgb(201, 201, 201);
@@ -35,6 +38,7 @@ option {
 }
 
 button {
+    height: 3rem;
     width: 10rem;
     padding: 0.5rem;
     border-radius: 0.2rem;

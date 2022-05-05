@@ -12,20 +12,19 @@ const useFetch = () => {
     try {
         setError(null);
         setLoading(true);
-        result = await fetch(`${url}?participants=${participants}${activity}`);
+        result = await fetch(`${url}?participants=${participants}&type=${activity}`);
         json = await result.json()
-        console.log(`${url}?participants=${participants}${activity}`)
+        console.log(`${url}?participants=${participants}`)
     } catch(e) {
         json = null;
-        setError('There is no activity with your preferences.')
+        setError(true)
     } finally {
         setData(json);
         setLoading(null)
-        return {data}
     }
-  }, [data])
+  }, [])
 
-  return {fetchData}
+  return {fetchData, data, loading, error}
 }
 
 export default useFetch

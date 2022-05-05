@@ -1,0 +1,29 @@
+.free {
+  display: inline;
+  background: #63c96c;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  color:white
+}
+
+h2 {
+  margin-bottom: 2rem;
+  max-width: 30rem
+}
+
+section > p {
+  margin-bottom: 0.5rem
+}
+
+a {
+  font-size: 1.1rem;
+  transition: 0.1s;
+  color: #2B2F2C;
+  display: inline-block;
+  margin-bottom: 0.5rem
+}
+
+a:hover {
+  color: #5AB7CC;
+}

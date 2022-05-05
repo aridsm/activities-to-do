@@ -1,15 +1,12 @@
 import React from 'react'
 import styles from './Form.module.css'
 import { ReactComponent as Dado } from './assets/dado.svg'
-import useFetch from './useFetch'
 
-const Form = () => {
+const Form = ({setActivityVisible, fetchData}) => {
  const [participants, setParticipants] = React.useState(1)
  const [activity, setActivity] = React.useState('')
- const {fetchData} = useFetch()
 
  const options = [
-        'all',
         'education',
         'recreational',
         'social',
@@ -21,12 +18,11 @@ const Form = () => {
         'busywork'
     ]
 
-
-
 const handlesubmit = React.useCallback((e) => {
     e.preventDefault();
-    const {data} = fetchData(participants, `&type=${activity}`)
-    console.log(data)
+    fetchData(participants, activity)
+    setActivityVisible(true)
+    console.log(activity)
 }, [fetchData, activity, participants])
 
   return (
@@ -38,7 +34,8 @@ const handlesubmit = React.useCallback((e) => {
         <div>
             <label htmlFor='activity'>Type of activity</label>
             <select value={activity} onChange={(e) => setActivity(e.target.value)}>
-                {options.map(option => 
+                <option value=''>All</option>
+                {options.map(option =>
                     <option key={option} value={option}>{option}</option>
                 )}
             </select>
