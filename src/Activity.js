@@ -17,7 +17,7 @@ const Activity = (props) => {
     {props.data.link && <a href={props.data.link}>Website</a>}
     <p>Participants: {props.data.participants}</p>
     <p>Type of Activity: {props.data.type}</p>
-    {props.data.price == 0 ? <p className={styles.free}>FREE</p> : <p>Price (0 to 100%): {props.data.price * 100}%</p>}
+    {props.data.price === 0 ? <p className={styles.free}>FREE</p> : <p>Price (0 to 100%): {props.data.price * 100}%</p>}
     </section>
   )
   else return null

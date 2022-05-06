@@ -70,12 +70,21 @@ footer a:hover {
     color: #5AB7CC
 }
 
-@media all and (max-width: 790px) {
+.img {
+    margin-left: 3rem
+}
+
+@media all and (max-width: 830px) {
   .principal {
     flex-direction: column;
   }
+
+  .principal section {
+    width: 100%
+  }
   .App {
     height: initial;
+    width: 100%;
   }
   h1 {
       margin-bottom: 4rem;
@@ -87,6 +96,9 @@ footer a:hover {
   .img svg {
     width: 100%
   }
+  .img {
+    margin-left: 0
+}
 }
 
 @media all and (min-width: 1700px) {

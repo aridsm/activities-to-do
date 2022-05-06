@@ -4,7 +4,7 @@ const useFetch = () => {
   const [error, setError] = React.useState(null)
   const [loading, setLoading] = React.useState(null)
   const [data, setData] = React.useState(null)
-  const url = 'http://www.boredapi.com/api/activity'
+  const url = 'https://www.boredapi.com/api/activity'
 
   const fetchData = React.useCallback( async (participants, activity) => {
     let result;

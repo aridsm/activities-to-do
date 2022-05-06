@@ -66,11 +66,11 @@ button svg {
     margin-left: 0.5rem;
 }
 
-@media all and (max-width: 790px) {
+@media all and (max-width: 830px) {
 
   .form {
     grid-template-columns: 1fr;
-    width:100%;
+    width: 100%
   }
 
   button, select, input {
